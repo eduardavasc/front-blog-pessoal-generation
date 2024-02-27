@@ -7,7 +7,7 @@ import { buscar, deletar } from '../../../services/Service'
 function DeletarTema() {
     const [tema, setTema] = useState<Tema>({} as Tema)
 
-    let navigate = useNavigate()
+    const navigate = useNavigate()
 
     const { id } = useParams<{ id: string }>()
 
